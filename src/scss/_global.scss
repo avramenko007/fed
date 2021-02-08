@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    color: $black;
+    font-size: $fontSize-small;
+    font-family: $font-base;
+    line-height: $lineHeight-base;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0 0 20px;
+    font-size: $fontSize-small;
+    color: $black;
+    @include breakpoint(medium) {
+        margin-bottom: 15px;
+    }
+}
+
+h1,
+h2,
+h3 {
+    line-height: $lineHeight-base;
+}
+
+h1 {
+    font-family: $font-base;
+    font-size: $fontSize-larger;
+    margin: 0 0 22px;
+    color: $black;
+    @include breakpoint(medium) {
+        margin-bottom: 24px;
+        font-size: $fontSize-largest;
+    }
+}
+
+h2 {
+    font-family: $font-base;
+    font-size: $fontSize-large;
+    margin: 0 0 22px;
+    @include breakpoint(medium) {
+        font-size: $fontSize-larger;
+        margin-bottom: 24px;
+    }
+}
+
+h3 {
+    font-family: $font-base-bold;
+    font-weight: 600;
+    font-size: $fontSize-pre-medium;
+    margin: 0 0 14px;
+
+    @include breakpoint(medium) {
+        font-size: $fontSize-medium;
+        margin-bottom: 15px;
+    }
+}
+
+h4{
+    font-size: $fontSize-smallest;
+    margin: 0 0 20px;
+
+    @include breakpoint(medium) {
+        font-size: $fontSize-small;
+        margin-bottom: 40px;
+    }
+}
+
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container{
+    width: 100%;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 $content-gutters;
+}
+
+.mobile-hidden{
+    display: none;
+
+    @include breakpoint (medium) {
+        display: block;
+    }
+}

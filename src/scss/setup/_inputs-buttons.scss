@@ -1,0 +1,18 @@
+.btn{
+	font-family: $font-base-bold;
+	font-size: $fontSize-button;
+	font-weight: 600;
+	padding: 13px 16px;
+	border-radius: 4px;
+	color: $white;
+	background: $pink; 
+    background: linear-gradient(to left, $pink, $orange);
+}
+
+.btn--slider{
+	font-size: $fontSize-large;
+	text-transform: uppercase;
+	border: 2px solid $white;
+	text-transform: uppercase;
+	padding: 13px 30px;
+}

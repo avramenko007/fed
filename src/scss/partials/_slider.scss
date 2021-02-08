@@ -1,0 +1,238 @@
+.section-slider{
+	height: 100vh;
+	margin-top: 0px;
+	position: relative;
+	overflow: hidden;
+
+	div{
+		height: 100%;
+
+		img{
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	&:after{
+		content:'';
+		background-color:rgba(0%, 0%, 0%, 0.6);
+		position: absolute;
+		top: 0;
+		left: -10%;
+		width: 50%;	
+		height: 100%;
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+		 -o-transform: skew(-20deg);
+	}
+}
+
+.slider--content{
+	width: 100%;
+	display: block;
+    position: absolute;
+    top: 165px;
+	z-index: 101;
+	pointer-events: none;
+}
+
+.slider--text{
+	height: fit-content !important;
+	margin-bottom: 20px;
+	
+	&:after{
+		content: '';
+		position: absolute;
+		top: -6px;
+		left: -10px;
+		width: 3px;
+		height: 232px;
+		transform: rotate(20deg);
+		background-color: rgba(100%, 100%, 100%, 0.6);
+
+	}
+
+	.slider-title{
+		max-width: 650px;
+		background-color: rgba(100%, 100%, 100%, 0.6);
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+		 display: block;
+		 margin-bottom: 10px;
+
+		 span{
+			font-family: "Intro";
+			font-size: 90px;
+			text-transform: uppercase;
+			 display: block;
+			-webkit-transform: skew(20deg);
+			-moz-transform: skew(20deg);
+			 -o-transform: skew(20deg);
+			 padding: 22px 140px 22px 40px;
+			 line-height: 1;
+			 color: $black;
+		 }
+	}
+	.slider-category{
+		background-color: rgba(100%, 100%, 100%, 0.6);
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+		 display: block;
+		 padding: 11px 70px 17px;
+		 width: max-content;
+
+		 h2{
+			font-family: 'Intro-Black-italic';
+			display: block;
+			-webkit-transform: skew(20deg);
+			-moz-transform: skew(20deg);
+			 -o-transform: skew(20deg);
+			 position: relative;
+
+			 &:after{
+				 content: '';
+				 width: 110%;
+				 height: 2px;
+				 background-color: $black;
+				 position: absolute;
+				 bottom: -4px;
+				 left: -10px;
+			 }
+		 }
+	}
+
+	.slider-price{
+		background: linear-gradient(to left, $darkGreen, $lightGreen);
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+		 display: block;
+		 padding: 0px 17px;
+		 width: max-content;
+		 height:fit-content;
+		 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+		 margin-left: 10px;
+
+		 p{
+			display: block;
+			-webkit-transform: skew(20deg);
+			-moz-transform: skew(20deg);
+			 -o-transform: skew(20deg);
+			 margin-bottom: 0;
+		 }
+	}	  
+
+	p{
+		font-family: 'Intro';
+		color: $white;
+
+		span{
+			font-family: 'Intro-Black';
+			font-size: 50px;
+		}
+	}
+
+	.description{
+		max-width: 310px;
+		display: block;
+		font-family: $font-base-bold;
+		color: $white;
+		font-size: $fontSize-pre-medium;
+		text-transform: uppercase;
+	}
+}
+
+.slider--pagination{
+	display: flex;
+	height: fit-content !important;
+	pointer-events: all;
+	align-items: center;
+
+	.slick-prev, .slick-next{
+		position: relative;
+		width: 25px;
+		height: 40px;
+		display: block;
+		border: none;
+		outline: none;
+		background-color: transparent;
+
+		&:before{
+			content:'';
+			display: none;
+		}
+	}
+
+	li {
+		list-style: none;
+		margin: 0 5px;
+
+		button { 
+			display: block;
+			font-size: 0; 
+			border: none;
+			outline: none;
+			background-image: url(../img/slider/pagination.png);
+			background-color: transparent;
+			width: 20px;
+			height: 20px;
+		}
+	 } 
+
+	 ul.pagination-dots{
+		 display: flex;
+		 margin: 0;
+		 padding: 0;
+	 }
+
+	 .slick-active{
+		 button{
+			 background-position: 0px 20px;
+		 }
+	 }
+
+	.slick-prev{
+		background: url(../img/slider/arrow-to-left.png);
+		top: 0;
+    	left: 0;
+		transform: none;
+		margin-right: 20px;
+	}
+
+	.slick-next{
+		background: url(../img/slider/arrow-to-left.png);
+		transform: rotate(
+			180deg
+			);
+		top: 0;
+		right: 0;
+		margin-left: 20px;
+	}
+}
+
+.slider--info-product{
+	display: flex;
+    align-items: center;
+	height: fit-content !important;
+	margin-bottom: 25px;
+	margin-left: -41px;
+
+	h2{
+		margin-bottom: 0;
+	}
+
+	span{
+		height:74px;
+	}
+}
+
+.container--slider-content{
+	position: relative;
+}
+
+.slider--button{
+	height: fit-content !important;
+	margin-bottom: 40px;
+}

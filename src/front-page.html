@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Gulp</title>
+</head>
+<body id="page-top">
+    @@include('_header.html')
+    <div class="section-slider">
+        <div class="slider--content">
+            <div class="container container--slider-content">
+                <div class="slider--text">
+                        <span class="slider-title"><span> фотообои</span></span>
+                        <div class="slider--info-product">
+                            <span class='slider-category'><h2>Для спальни</h2></span>
+                            <span class="slider-price"><p>от <span> 50 </span> $/м2</p></span>
+                        </div>
+                        <span class="description">Более 6000 идей фотообоев для ГОСТИНОЙ</span>
+                </div>
+                <div class="slider--button">
+                        <a href="#" class="btn btn--slider">Смотреть идеи</a>
+                </div>
+                <div class="slider--pagination">
+                    <button type="button" class="slick-prev"></button>
+                    <div class="pagination-dots"></div>
+                    <button type="button" class="slick-next"></button>
+                </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="item-my" data-category="Для спальни">
+                <img src="./img/slider/bedroom-2.jpg" alt="">
+            </div>
+            <div class="item-my"  data-category="Для спальни">
+                <img src="./img/slider/bedroom.jpg" alt="">
+            </div>
+            <div class="item-my" data-category="Для кухни">
+                <img src="./img/slider/kitchen-2.jpg" alt="">
+            </div>
+            <div class="item-my" data-category="Для кухни">
+                <img src="./img/slider/kitchen.jpg" alt="">
+            </div>
+            <div class="item-my" data-category="Для гостинной">
+                <img src="./img/slider/livingroom-2.jpg" alt="">
+            </div>
+            <div class="item-my" data-category="Для гостинной">
+                <img src="./img/slider/livingroom.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section-advantages">
+        <div class="container">
+            <div class="advantages-box">
+                <div class="advantages-box--item">
+                    <div class="advantages-box--image">
+                        <img src="./img/icons/img.png" alt="">
+                    </div>
+                    <h3 class="advantages-box--title">Печатаем что угодно</h3>
+                    <div class="advantages-box--content">Все фотообои мы изготавливаем под заказ на собственном оборудовании. По этому можем напечатать совершенно все,что вы захотите</div>
+                </div>
+                <div class="advantages-box--item">
+                    <div class="advantages-box--image">
+                        <img src="./img/icons/arrow.png" alt="">
+                    </div>
+                    <h3 class="advantages-box--title">Любые размеры</h3>
+                    <div class="advantages-box--content">Профессиональное оборудование позволяет напечатать фотообои совершенно любого размера. Можем заклеить как часть, таки все стену без ограничений.</div>
+                </div>
+                <div class="advantages-box--item">
+                    <div class="advantages-box--image">
+                        <img src="./img/icons/calendar.png" alt="">
+                    </div>
+                    <h3 class="advantages-box--title">Изготовление за 1 день</h3>
+                    <div class="advantages-box--content">В среднем, изготовление одних фотообоев среднего размера занимает не более одного дня!</div>
+                </div>
+                <div class="advantages-box--item">
+                    <div class="advantages-box--image">
+                        <img src="./img/icons/hands.png" alt="">
+                    </div>
+                    <h3 class="advantages-box--title">Без посредников</h3>
+                    <div class="advantages-box--content">Мы имеем в наличие все необходимое оборудование для самостоятельного изготовления фотообоев. А значит вы не переплачиваете посредникам.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+<script>
+    $('.responsive').slick({
+        dots: true,
+        dotsClass: 'pagination-dots',
+        appendDots: $('.pagination-dots'),
+        arrows: true,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        });
+</script>
+</body>
+</html>
